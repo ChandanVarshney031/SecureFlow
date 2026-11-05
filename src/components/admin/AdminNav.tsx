@@ -10,7 +10,7 @@ import {
   ShieldAlert,
   ArrowLeft,
   Activity,
-  Cpu,
+  DatabaseZap,
 } from "lucide-react";
 
 const ADMIN_NAV = [
@@ -18,6 +18,7 @@ const ADMIN_NAV = [
   { name: "Queue Monitor", href: "/admin/queue", icon: Activity, exact: false },
   { name: "Users", href: "/admin/users", icon: Users, exact: false },
   { name: "Audit Logs", href: "/admin/logs", icon: ScrollText, exact: false },
+  { name: "Data Retention", href: "/admin/retention", icon: DatabaseZap, exact: false },
 ];
 
 function isActive(pathname: string | null, href: string, exact: boolean) {
