@@ -188,6 +188,9 @@ describe("scripts/retention.ts - CLI and Data Deletion Boundaries (#1330)", () =
           findMany: vi.fn().mockResolvedValue([]),
           updateMany: vi.fn().mockResolvedValue({ count: 0 }),
         },
+        findingTriage: {
+          findMany: vi.fn().mockResolvedValue([]),
+        },
         webhookEvent: {
           findMany: vi.fn().mockResolvedValue([]),
           deleteMany: vi.fn().mockResolvedValue({ count: 0 }),
